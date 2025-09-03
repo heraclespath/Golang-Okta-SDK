@@ -55,13 +55,6 @@ The resulting Application User [scope](https://developer.okta.com/docs/api/opena
 
 	/*
 	GetApplicationGroupAssignment Retrieve an Application Group
-
-	Retrieves an app group assignment
-
-	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param appId Application ID
-	@param groupId The `id` of the group
-	@return ApiGetApplicationGroupAssignmentRequest
 	*/
 	GetApplicationGroupAssignment(ctx context.Context, appId string, groupId string) ApiGetApplicationGroupAssignmentRequest
 
