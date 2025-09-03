@@ -75,12 +75,6 @@ type ApplicationFeaturesAPI interface {
 
 	Updates a Feature object for an application
 > **Note:** This endpoint supports partial updates.
-
-
-	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param appId Application ID
-	@param featureName Name of the Feature
-	@return ApiUpdateFeatureForApplicationRequest
 	*/
 	UpdateFeatureForApplication(ctx context.Context, appId string, featureName string) ApiUpdateFeatureForApplicationRequest
 
@@ -108,11 +102,6 @@ func (r ApiGetFeatureForApplicationRequest) Execute() (*ListFeaturesForApplicati
 GetFeatureForApplication Retrieve a Feature
 
 Retrieves a Feature object for an application
-
- @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- @param appId Application ID
- @param featureName Name of the Feature
- @return ApiGetFeatureForApplicationRequest
 */
 func (a *ApplicationFeaturesAPIService) GetFeatureForApplication(ctx context.Context, appId string, featureName string) ApiGetFeatureForApplicationRequest {
 	return ApiGetFeatureForApplicationRequest{
