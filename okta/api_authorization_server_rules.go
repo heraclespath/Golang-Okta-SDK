@@ -20,7 +20,7 @@ package okta
 import (
 	"bytes"
 	"context"
-	"io/ioutil"
+	"io/ioutil"	
 	"net/http"
 	"net/url"
 	"time"
@@ -34,12 +34,6 @@ type AuthorizationServerRulesAPI interface {
 	ActivateAuthorizationServerPolicyRule Activate a Policy Rule
 
 	Activates an authorization server policy rule
-
-	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param authServerId `id` of the Authorization Server
-	@param policyId `id` of the Policy
-	@param ruleId `id` of the Policy Rule
-	@return ApiActivateAuthorizationServerPolicyRuleRequest
 	*/
 	ActivateAuthorizationServerPolicyRule(ctx context.Context, authServerId string, policyId string, ruleId string) ApiActivateAuthorizationServerPolicyRuleRequest
 
