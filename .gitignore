@@ -2,4 +2,6 @@
 .okta
 .idea
 .okta.yaml
-.vscode
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
